@@ -1,0 +1,58 @@
+/* *********** CSS by Jennie Allen ***********
+     ***** Thar be dragons ahead *******
+*********************************************/
+
+root {
+    box-sizing: border-box;
+}
+html * {
+    border: 1.5px red solid;
+}
+header,
+footer {
+    width: 100%;
+    display: flex;
+}
+main {
+    width: 100%;
+}
+header {
+    justify-content: space-between;
+}
+header span {
+    padding: 2%;
+}
+footer {
+    justify-content: space-around;
+    flex-direction: column;
+}
+footer * {
+    display: flex;
+    justify-content: center;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+}
+.banner * {
+    display: flex;
+    justify-content: center;
+}
+#gallery {
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+#contact-container {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+main ul li {
+    padding: 2%;
+}

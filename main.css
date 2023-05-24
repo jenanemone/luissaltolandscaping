@@ -2,19 +2,72 @@
      ***** Thar be dragons ahead *******
 *********************************************/
 
+/* #region EricMeyerReset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* #endregion EricMeyerReset */
+
+/* #region Basics */
 root {
     box-sizing: border-box;
 }
 html * {
     border: 1.5px red solid;
 }
+/* #endregion Basics */
+
+/* #region HeaderFooter */
 header,
 footer {
     width: 100%;
     display: flex;
-}
-main {
-    width: 100%;
 }
 header {
     justify-content: space-between;
@@ -30,6 +83,16 @@ footer * {
     display: flex;
     justify-content: center;
 }
+/* #endregion HeaderFooter */
+
+/* #region Main */
+main {
+    width: 100%;
+}
+main ul li {
+    padding: 2%;
+}
+
 .banner {
     display: flex;
     flex-direction: column;
@@ -38,6 +101,9 @@ footer * {
     display: flex;
     justify-content: center;
 }
+/* #endregion Main */
+
+/* #region Gallery */
 #gallery {
     padding: 2%;
     display: grid;
@@ -46,6 +112,9 @@ footer * {
     column-gap: 30px;
     row-gap: 30px;
 }
+/* #endregion Gallery */
+
+/* #region Contact */
 #contact-container {
     padding: 2%;
     display: flex;
@@ -53,6 +122,4 @@ footer * {
     justify-content: space-between;
     align-items: center;
 }
-main ul li {
-    padding: 2%;
-}
+/* #endregion Contact */

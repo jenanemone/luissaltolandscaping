@@ -86,8 +86,16 @@ footer * {
 /* #endregion HeaderFooter */
 
 /* #region Main */
+main h1 {
+    font-size: xx-large;
+    padding: 20px 0;
+}
+main h3 {
+    font-size: x-large;
+    padding: 20px 0;
+}
 main {
-    width: 100%;
+    max-width: 100%;
 }
 main ul li {
     padding: 2%;
@@ -105,12 +113,24 @@ main ul li {
 
 /* #region Gallery */
 #gallery {
+    max-width: 100%;
     padding: 2%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 30px;
     row-gap: 30px;
+}
+#gallery.pic {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gallery img {
+     max-width: 95%;
+    object-fit: contain;
+    padding: 2%;
 }
 /* #endregion Gallery */
 

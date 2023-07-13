@@ -140,14 +140,30 @@ main ul li {
 
 /* #region Gallery */
 #gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .pic1 { grid-area: 3 / 1 / 4 / 2; }
+    .pic2 { grid-area: 2 / 2 / 3 / 3; }
+    .pic3 { grid-area: 2 / 3 / 3 / 4; }
+    .pic4 { grid-area: 2 / 4 / 3 / 5; }
+    .pic5 { grid-area: 3 / 4 / 4 / 5; }
+    .pic6 { grid-area: 3 / 3 / 4 / 4; }
+    .pic7 { grid-area: 3 / 2 / 4 / 3; }
+    .pic8 { grid-area: 3 / 5 / 4 / 6; }
+/* #gallery { */
    /*  max-width: 100%; */
    /*  padding: 2%; */
-    display: grid;
+   /*  display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 30px;
     row-gap: 5px;
-}
+} */
 #gallery.pic {
     /* max-width: 50%; */
     display: flex;

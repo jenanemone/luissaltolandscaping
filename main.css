@@ -61,7 +61,7 @@ root {
     box-sizing: border-box;
 }
 html * {
-    border: 1.5px red solid;
+    /* border: 1.5px red solid; */
 }
 body {
     font-family: 'Mallanna', sans-serif;

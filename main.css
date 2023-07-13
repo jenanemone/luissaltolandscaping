@@ -2,7 +2,7 @@
      ***** Thar be dragons ahead *******
 *********************************************/
 
-@import url(https://fonts.bunny.net/css?family=actor:400|bonheur-royale:400|ephesis:400|fjalla-one:400|love-light:400|mallanna:400);
+@import url(https://fonts.bunny.net/css?family=actor:400|bonheur-royale:400|ephesis:400|fjalla-one:400|kite-one:400|love-light:400|mallanna:400);
 
 /* #region Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -61,12 +61,15 @@ root {
     box-sizing: border-box;
 }
 html * {
-    /* border: 1.5px red solid; */
+    border: 1.5px red solid;
 }
 body {
-    font-family: 'Mallanna', sans-serif;
-    background-color: #302727;
+    font-family: 'Kite One', sans-serif;
+    background-color: #313030;
     color: #CFF6C4;
+}
+#page-container {
+    margin: 20px;
 }
 /* #endregion Basics */
 
@@ -75,6 +78,10 @@ header,
 footer {
     width: 100%;
     display: flex;
+}
+header a,
+footer a {
+    text-decoration: none;
 }
 header {
     justify-content: space-between;
@@ -95,7 +102,7 @@ footer * {
 /* #region Main */
 main h1 {
     font-family: 'Bonheur Royale', handwriting;
-    font-size: xx-large;
+    font-size: 50px;
     padding: 20px 0;
     color: #4D7E3E;
 }
@@ -104,12 +111,23 @@ main h3 {
     padding: 20px 0;
 }
 main {
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 main ul li {
     padding: 2%;
 }
-
+#miniGallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#miniGallery img {
+    max-width: 30vw;
+}
 .banner {
     display: flex;
     flex-direction: column;
@@ -122,22 +140,22 @@ main ul li {
 
 /* #region Gallery */
 #gallery {
-    max-width: 100%;
-    padding: 2%;
+   /*  max-width: 100%; */
+   /*  padding: 2%; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 5px;
 }
 #gallery.pic {
-    max-width: 50%;
+    /* max-width: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #gallery img {
-     max-width: 95%;
+    max-width: 95%;
     object-fit: contain;
     padding: 2%;
 }

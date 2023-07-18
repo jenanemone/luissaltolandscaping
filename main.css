@@ -143,10 +143,18 @@ main ul li {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    gap: 10px;
     }
-    
+.tallPic {
+    grid-row: span 2;
+    grid-column: 3 span 2;
+    max-width: 20vw;
+}   
+.regPic {
+    grid-row: auto;
+    grid-column: auto;
+    /* max-width: 20vw; */
+} 
     .pic1 { grid-area: 3 / 1 / 4 / 2; }
     .pic2 { grid-area: 2 / 2 / 3 / 3; }
     .pic3 { grid-area: 2 / 3 / 3 / 4; }

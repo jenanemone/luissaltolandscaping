@@ -61,22 +61,22 @@ root {
     box-sizing: border-box;
 }
 html * {
-    border: 1.5px red solid;
+    /* border: 1.5px red solid; */
 }
 body {
     font-family: 'Kite One', sans-serif;
-    background-color: #313030;
+    background-color: #423f3f;
     color: #CFF6C4;
 }
 #page-container {
-    margin: 2vh 2vw 0 2vw;
+    margin: 0 2vw 0 2vw;
 }
 /* #endregion Basics */
 
 /* #region HeaderFooter */
 header,
 footer {
-    width: 100%;
+    width: 100vw;
     display: flex;
 }
 header a,
@@ -92,7 +92,7 @@ header span {
 footer {
     justify-content: center;
     align-items: flex-end;
-    padding: 1%;
+    padding: 1% 0 0 0;
 }
 /* #endregion HeaderFooter */
 

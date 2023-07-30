@@ -69,7 +69,12 @@ body {
     color: #CFF6C4;
 }
 #page-container {
-    margin: 0 2vw 0 2vw;
+    padding: 2%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 /* #endregion Basics */
 
@@ -88,6 +93,13 @@ header {
 }
 header span {
     padding: 2%;
+    margin: 1%;
+}
+header > span {
+    font-family: 'Actor', sans-serif;
+}
+header span + span {
+    border-radius: 10px 100px / 120px; 
 }
 footer {
     justify-content: center;
@@ -124,6 +136,7 @@ main ul li {
 }
 #miniGallery img {
     max-width: 30vw;
+    border-radius: 10%;
 }
 .banner {
     display: flex;
@@ -152,12 +165,12 @@ main ul li {
     grid-column: auto;
     /* max-width: 20vw; */
 } 
-    .pic1 { grid-area: 3 / 1 / 4 / 2; }
-    .pic2 { grid-area: 2 / 2 / 3 / 3; }
-    .pic3 { grid-area: 2 / 3 / 3 / 4; }
-    .pic4 { grid-area: 2 / 4 / 3 / 5; }
-    .pic5 { grid-area: 3 / 4 / 4 / 5; }
-    .pic6 { grid-area: 3 / 5 / 4 / 6; }
+.pic1 { grid-area: 3 / 1 / 4 / 2; }
+.pic2 { grid-area: 2 / 2 / 3 / 3; }
+.pic3 { grid-area: 2 / 3 / 3 / 4; }
+.pic4 { grid-area: 2 / 4 / 3 / 5; }
+.pic5 { grid-area: 3 / 4 / 4 / 5; }
+.pic6 { grid-area: 3 / 5 / 4 / 6; }
 #gallery.pic {
     display: flex;
     justify-content: center;
@@ -166,10 +179,14 @@ main ul li {
 #gallery img {
     max-width: 95%;
     object-fit: contain;
+    border-radius: 10%;
 }
 /* #endregion Gallery */
 
 /* #region Contact */
+#contact-container {
+    margin-top: 2%;
+}
 #contact-container,
 header span + span {
     background-color: #4D7E3E;
@@ -184,8 +201,7 @@ header span + span a {
     color: #CFF6C4;
 }
 #contact-container form {
-    padding: 20px;
-    
+    padding: 20px;    
 }
 #contact-container p {
     display: flex;
@@ -221,5 +237,4 @@ header span + span a {
     padding: 1%;
     justify-content: center;
 }
-
 /* #endregion Socials */
